@@ -1,0 +1,251 @@
+{
+	"info": {
+		"_postman_id": "42f9a9d5-878d-4cc0-b226-0b05068426d3",
+		"name": "FiapSmartCity Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TipoProduto - Get By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:60368/api/tipoproduto/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "60368",
+					"path": [
+						"api",
+						"tipoproduto",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TipoProduto - Get All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:60368/api/tipoproduto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "60368",
+					"path": [
+						"api",
+						"tipoproduto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TipoProduto - Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"descricaoTipo\": \"Energia Solar\",\r\n\t\"comercializado\": true,\r\n\t\"produtos\": [{\r\n\t\t\"idProduto\": 800,\r\n\t\t\"nomeProduto\": \"Produto 1\",\r\n\t\t\"caracteristicas\": \"A tecnologia\",\r\n\t\t\"precoMedio\": 4000,\r\n\t\t\"logotipo\": \"data:image/jpeg;base64\",\r\n\t\t\"ativo\": true\r\n\t},{\r\n\t\t\"idProduto\": 800,\r\n\t\t\"nomeProduto\": \"Produto 2\",\r\n\t\t\"caracteristicas\": \"A tecnologia\",\r\n\t\t\"precoMedio\": 4000,\r\n\t\t\"logotipo\": \"data:image/jpeg;base64\",\r\n\t\t\"ativo\": true\r\n\t}]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:60368/api/tipoproduto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "60368",
+					"path": [
+						"api",
+						"tipoproduto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TipoProduto - Put",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"idTipo\": 2,\r\n\"descricaoTipo\": \"Tinta\",\r\n\"comercializado\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:60368/api/tipoproduto/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "60368",
+					"path": [
+						"api",
+						"tipoproduto",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TipoProduto - Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:60368/api/tipoproduto/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "60368",
+					"path": [
+						"api",
+						"tipoproduto",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Produto - Get By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:60368/api/produto/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "60368",
+					"path": [
+						"api",
+						"produto",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Produto - Get All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:60368/api/produto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "60368",
+					"path": [
+						"api",
+						"produto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Produto - Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"idTipoProduto\": 1,\r\n        \"nomeProduto\": \"Energia Solar Fotovoltatica\",\r\n        \"caracteristicas\": \"A tecnologia fotovoltaica (FV)  \\r\\n                                            converte diretamente os raios  \\r\\n                                            solares em eletricidade\",\r\n        \"precoMedio\": 4000,\r\n        \"logotipo\": \"data:image/jpeg;base64\",\r\n        \"ativo\": true\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:60368/api/produto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "60368",
+					"path": [
+						"api",
+						"produto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Produto - Put",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idTipoProduto\": 1,\r\n    \"idProduto\": 1,\r\n    \"nomeProduto\": \"Energia Solar Fotovoltatica\",\r\n    \"caracteristicas\": \"A tecnologia fotovoltaica (FV)  \\r\\n                                            converte diretamente os raios  \\r\\n                                            solares em eletricidade\",\r\n    \"precoMedio\": 4000,\r\n    \"logotipo\": \"data:image/jpeg;base64\",\r\n    \"ativo\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:60368/api/produto/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "60368",
+					"path": [
+						"api",
+						"produto",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Produto - Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:60368/api/produto/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "60368",
+					"path": [
+						"api",
+						"produto",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
